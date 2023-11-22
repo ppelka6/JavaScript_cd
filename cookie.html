@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Użycie informacji cookie </title>
+    <script> 
+        function createCookie(name, value, days, path, domain, secure) {
+            if (days) {
+                var date = new Data();
+                data.setTime(date.getTime() + (days*24*60*60*1000));
+                var expires = da.toGMTString();
+            }
+            else var expires = "";
+            cookieString = name + "=" + escape (value);
+            if (expires) cookieString += "; expires=" + expires;
+            if (path) cookieString += "; path=" + escape (path);
+            if (domain) cookieString += "; domain=" + escape (domain);
+            if (secure) cookieString += "; secure"; document.cookie = cookieString;
+        }
+        createCookie("username","Jan Nowak", 5);
+        createCookie("location","Polska", 5);
+        createCookie("status", "fullmember", 5);
+    </script>
+    </head>
+    <body>
+        Sprawdź informacje cookie dla tej domeny za pomocą narzędzi przeglądarki
+    </body>
+</html>
